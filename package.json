@@ -1,0 +1,23 @@
+{
+  "name": "hs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-es6": ".\\node_modules\\.bin\\esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
+    "dev": ".\\node_modules\\.bin\\esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js --watch",
+    "serve": ".\\node_modules\\.bin\\http-server.CMD ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jsplumbtoolkit/browser-ui": "^6.81.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "esbuild": "0.17.18"
+  },
+  "devDependencies": {
+    "http-server": "14.1.1"
+  }
+}
