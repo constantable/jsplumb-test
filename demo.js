@@ -349,7 +349,10 @@ ready(() => {
                     toolkit.removeNode(info.obj)
                 }
             }
-        ]
+        ],
+        defaults:{
+            resizeObserver:false
+        }
     })
 
     new FlowchartBuilderInspector({
